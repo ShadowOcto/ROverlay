@@ -1,0 +1,120 @@
+body {
+    font-family: 'Product Sans', sans-serif;
+    border: none;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) translateY(-0.8px)}
+    100% { transform: rotate(360deg) translateY(-0.8px)}
+}
+
+#keystrokes {
+    /*transform: translate(calc(-100% - 10px), calc(-100% - 10px));*/
+    transition: opacity 0.1s ease-out;
+    position: absolute;
+    scale: 99%;
+    opacity: 0;
+    left: 10px;
+    top: 71%;
+}
+
+.key {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.1s ease-out;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+}
+
+.key.pressed {
+    background: rgba(80, 80, 80, 0.5);
+    scale: 104%;
+}
+
+#keystrokes.pressed {
+    scale: 100%;
+    opacity: 1;
+}
+
+.customs {
+    display: flex;
+    align-items: center;
+}
+
+#E {
+    width: 47px;
+}
+
+#Q {
+    width: 47px;
+}
+
+#crosshair {
+    transition: opacity 0.5s ease-out;
+    transform: translateY(10.5px);
+    height: 100px;
+    width: 100px;
+    opacity: 75%;
+    fill: lime;
+}
+
+#crosshair.ads {
+    opacity: 50%;
+}
+
+#actionbar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -100%);
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-out;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px;
+    opacity: 0;
+    top: 86%;
+    left: 50%;
+}
+
+#actionbar i {
+    transition: color 0.2s ease-in-out;
+    margin: 2px;
+}
+
+#actionbar i.pressed {
+    color: lime;
+}
+
+#spinner {
+    animation: spin 3s infinite linear;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    color: black;
+    scale: 800%;
+    opacity: 0;
+}
+
+#spinner.ads {
+    opacity: 50%;
+    scale: 650%;
+}
+
+#actionbar.shown {
+    opacity: 1;
+    top: 84%;
+}
+
+#SPACE {width: 128px;}
+.row {display: flex}
+#W {left: 54px;}

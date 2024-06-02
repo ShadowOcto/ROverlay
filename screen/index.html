@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ROverlay</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="keystrokes">
+        <div class="key" id="W">W</div>
+
+        <div class="row">
+            <div class="key" id="A">A</div>
+            <div class="key" id="S">S</div>
+            <div class="key" id="D">D</div>
+        </div>
+        <div class="key" id="SPACE">───────</div>
+
+<!--        <div class="customs">-->
+<!--            <div class="key" id="Q">Q</div>-->
+<!--            <div class="key" id="E">E</div>-->
+<!--        </div>-->
+    </div>
+
+    <svg id="crosshair" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
+        <g>
+            <path d="M45,48.5H40a1.5,1.5,0,0,0,0,3h5a1.5,1.5,0,0,0,0-3Z" />
+            <path d="M60,48.5H55a1.5,1.5,0,0,0,0,3h5a1.5,1.5,0,0,0,0-3Z" />
+            <path d="M50,38.5A1.5,1.5,0,0,0,48.5,40v5a1.5,1.5,0,0,0,3,0V40A1.5,1.5,0,0,0,50,38.5Z" />
+            <path d="M50,53.5A1.5,1.5,0,0,0,48.5,55v5a1.5,1.5,0,0,0,3,0V55A1.5,1.5,0,0,0,50,53.5Z" />
+        </g>
+    </svg>
+
+    <span id="spinner">⛶</span>
+
+    <div id="actionbar">
+        <i class="fas fa-crosshairs" id="ab-ads"></i>
+        <i class="fas fa-running" id="ab-sprint"></i>
+        <i class="fas fa-arrow-down" id="ab-crouch"></i>
+        <i class="fas fa-lock" id="ab-shiftLock"></i>
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
